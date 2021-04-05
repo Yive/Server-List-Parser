@@ -86,11 +86,7 @@ if($site eq "minecraftservers.org") {
     my $ua = LWP::UserAgent->new( cookie_jar => {}, agent => $agent );
     my @ips;
     for (my $i = 1; $i <= 112; $i++) {
-        if($i == 1) {
-            my $req = new HTTP::Request GET => 'https://topg.org/minecraft-servers/';
-        } else {
-            my $req = new HTTP::Request GET => 'https://topg.org/minecraft-servers/page/'.$i;
-        }
+        my $req = $i == 1 ? new HTTP::Request GET => 'https://topg.org/minecraft-servers/' : new HTTP::Request GET => 'https://topg.org/minecraft-servers/page/'.$i;
         my $res = $ua->request($req);
         my $content = $res->content;
         my @pageIps = ($content =~ /title="Copy (.*) to Clipboard">/g);
