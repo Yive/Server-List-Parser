@@ -8,11 +8,10 @@ Parser for minecraft server lists.
 ### Valid Server Lists:
 ```minecraftservers.org
 minecraft-server-list.com
-minecraft-index.com
 minecraft-server.net
+topg.org
+minecraft-mp.com
 minelist.net
-minecraftforum.net
-minepick.com
+mc-servers.com
 serveurs-minecraft.com
-minecraftpeservers.org
 ```
