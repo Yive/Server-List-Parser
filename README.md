@@ -6,7 +6,8 @@ Parser for minecraft server lists.
 ```perl parse.pl [valid server list]```
 
 ### Valid Server Lists:
-```minecraftservers.org
+```
+minecraftservers.org
 minecraft-server-list.com
 minecraft-server.net
 topg.org
